@@ -1,0 +1,9 @@
+<fieldset class="box tabular">
+<legend><%= l(:redmine_more_context_issue_preferences) %></legend>
+<p>
+  <%= labelled_fields_for :pref, @user.pref do |pref_fields| %>
+	<%= pref_fields.text_field :redmine_more_context_redirect_on_submit, :value => @user.pref.redmine_more_context_redirect_on_submit %><br />
+  <%- end %>
+</p>
+</fieldset>
+

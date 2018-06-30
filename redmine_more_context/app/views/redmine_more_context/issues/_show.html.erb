@@ -5,8 +5,8 @@
 	  <td class="due_date" style="width: 100%;">&nbsp;</td>
 	</tr>
   </table>
-  <%# if User.current.pref.redmine_more_context_redirect_on_submit.present? %>
-    <%# hidden_field_tag 'back_url', User.current.pref.redmine_more_context_redirect_on_submit %>
-  <%# end %>
+  <%- if User.current.pref.redmine_more_context_redirect_on_submit.present? %>
+    <%= hidden_field_tag 'back_url', User.current.pref.redmine_more_context_redirect_on_submit %>
+  <%- end %>
 </form>
 <%= context_menu %>

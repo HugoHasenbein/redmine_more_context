@@ -18,16 +18,9 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
-Redmine::Plugin.register :redmine_more_context do
-  name 'Redmine More Context'
-  author 'Stephan Wenzel'
-  description 'This is a plugin for Redmine to use the issue context menue on the issue show page'
-  version '1.0.0'
-  url 'https://github.com/HugoHasenbein/redmine_more_context'
-  author_url 'https://github.com/HugoHasenbein/redmine_more_context'
+Rails.configuration.to_prepare do
 
-  requires_redmine_plugin :redmine_base_deface, :version_or_higher => '0.0.1'
+  require "redmine_more_context/patches/more_context_user_preference_patch"  
+  require "redmine_more_context/hooks/more_context_user_preference_hook"
 
 end
-
-require "redmine_more_context"
