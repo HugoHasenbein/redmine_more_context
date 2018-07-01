@@ -32,6 +32,10 @@ https://github.com/jbbarth/redmine_base_deface
 
 `sudo /etc/init.d/apache2 restart`
 
+### Use
+
+All issues will have a slightly different colored (grey) bar between the upper edit buttons and the issue heading. Right-click the bar and the context menu appears.
+
 ### Localisations
 
 * English
