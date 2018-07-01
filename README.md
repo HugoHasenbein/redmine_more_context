@@ -32,6 +32,11 @@ https://github.com/jbbarth/redmine_base_deface
 
 `sudo /etc/init.d/apache2 restart`
 
+### Localisations
+
+* English
+* German
+
 ### Change-Log
 
 * **1.0.2** added user preference to add redirect url after context menu
