@@ -12,23 +12,29 @@ The context menu is extremely convenient. Instead of Edit->Set attribute->Save, 
 
 https://github.com/jbbarth/redmine_base_deface
 
-2. go to your plugins folder
+2. download plugin and copy plugin folder redmine_more_context go to Redmine's plugins folder 
 
-`git clone https://github.com/HugoHasenbein/redmine_more_context.git`
+3. go to your Redmine's root folder
 
 `bundle install`
 
-3. restart redmine, f.i.
+4. restart redmine, f.i.
 
 `sudo /etc/init.d/apache2 restart`
 
 ### Uninstall
 
-1. delete redmine_base_deface from plugins if not needed by other plugins
+1. go to plugins folder
 
-2. delete redmine_more_context from plugins folder
+ a) delete redmine_base_deface from plugins if not needed by other plugins
 
-3. restart redmine, f.i.
+`rm -r redmine_base_deface`
+
+ b) delete plugin folder redmine_more_context
+
+`rm -r redmine_more_context`
+
+2. restart redmine, f.i.
 
 `sudo /etc/init.d/apache2 restart`
 
